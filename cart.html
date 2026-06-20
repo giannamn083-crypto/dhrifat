@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><div class="logo">DHR Bazar</div></header>
+
+<h2 style="padding:20px">কার্ট</h2>
+
+<div id="cartItems"></div>
+
+<script>
+let cart=JSON.parse(localStorage.getItem("cart"))||[];
+let box=document.getElementById("cartItems");
+box.innerHTML="Total items: "+cart.length;
+</script>
+
+</body>
+</html>
